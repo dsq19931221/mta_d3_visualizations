@@ -1,10 +1,24 @@
-<service><responsecode>0</responsecode><timestamp>12/4/2012 4:36:48 PM</timestamp><subway>
+<service><responsecode>0</responsecode><timestamp>12/6/2012 3:55:01 PM</timestamp><subway>
   <line>
     <name>123</name>
-    <status>GOOD SERVICE</status>
-    <text />
-    <Date></Date>
-    <Time></Time>
+    <status>SERVICE CHANGE</status>
+    <text>
+                    &lt;span class="TitleServiceChange" &gt;Service Change&lt;/span&gt;
+                    &lt;span class="DateStyle"&gt;
+                    &amp;nbsp;Posted:&amp;nbsp;12/06/2012&amp;nbsp; 3:31PM
+                    &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;
+                  &lt;P&gt;All times until further notice:&lt;/P&gt;
+&lt;P&gt;No [1] trains between &lt;STRONG&gt;Rector St&lt;/STRONG&gt; &amp; &lt;STRONG&gt;South Ferry&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;[1] service operates between &lt;STRONG&gt;242 St&lt;/STRONG&gt; and &lt;STRONG&gt;Rector St&lt;/STRONG&gt;.&lt;/P&gt;
+&lt;P&gt;For South Ferry, use the nearby &lt;STRONG&gt;Whitehall St&lt;/STRONG&gt; [R]* or&lt;STRONG&gt; Bowling Green&lt;/STRONG&gt; Stations instead. &lt;/P&gt;
+&lt;P&gt; - Transfer between [1] and [R] trains at &lt;STRONG&gt;Times Sq-42 St&lt;/STRONG&gt;.&lt;/P&gt;
+&lt;P&gt; - Transfer between [1] and [2] [3] trains at &lt;STRONG&gt;Chambers St.&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt; - Transfer between [2] [3] and [4] [5] trains at &lt;STRONG&gt;Fulton St.&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;* [R] service in Manhattan operates days and evenings only.&lt;/P&gt;
+                &lt;br/&gt;&lt;br/&gt;
+              </text>
+    <Date>12/06/2012</Date>
+    <Time> 3:31PM</Time>
   </line>
   <line>
     <name>456</name>
@@ -26,31 +40,38 @@
     <text>
                     &lt;span class="TitleServiceChange" &gt;Service Change&lt;/span&gt;
                     &lt;span class="DateStyle"&gt;
-                    &amp;nbsp;Posted:&amp;nbsp;12/04/2012&amp;nbsp; 4:32PM
+                    &amp;nbsp;Posted:&amp;nbsp;12/06/2012&amp;nbsp; 3:31PM
                     &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;
                   &lt;P&gt;Until further notice:&lt;/P&gt;
 &lt;P&gt;[A] No trains between &lt;STRONG&gt;Howard Beach-JFK/Broad Channel&lt;/STRONG&gt; and the &lt;STRONG&gt;Rockaways.&lt;/STRONG&gt;&lt;/P&gt;
 &lt;P&gt;[A] Service operates between &lt;STRONG&gt;207 St&lt;/STRONG&gt; and &lt;STRONG&gt;Lefferts Blvd/Howard Beach&lt;/STRONG&gt;.&lt;/P&gt;
-&lt;P&gt;Free shuttle trains and shuttle buses provide alternate service.&lt;/P&gt;
+&lt;P&gt;[H] Free shuttle trains and shuttle buses provide alternate service.&lt;/P&gt;
 &lt;P&gt;Free shuttle buses operate nonstop between &lt;STRONG&gt;Howard Beach&lt;/STRONG&gt; [A] and &lt;STRONG&gt;Mott Av.&lt;/STRONG&gt;&lt;/P&gt;
-&lt;P&gt;Free shuttle trains operate between&lt;STRONG&gt; Mott Av&lt;/STRONG&gt; and &lt;STRONG&gt;Beach 90 St&lt;/STRONG&gt;. &lt;/P&gt;
-&lt;P&gt;Shuttle hours of operation:&lt;/P&gt;
+&lt;P&gt;[H] Free shuttle trains operate between&lt;STRONG&gt; Mott Av&lt;/STRONG&gt; and &lt;STRONG&gt;Beach 90 St&lt;/STRONG&gt;. &lt;/P&gt;
+&lt;P&gt;[H] Shuttle hours of operation:&lt;/P&gt;
 &lt;P&gt;Departing &lt;STRONG&gt;Mott Av&lt;/STRONG&gt;: 4am to 12 midnight, every 15 minutes.&lt;/P&gt;
 &lt;P&gt;Departing &lt;STRONG&gt;Beach 90 St&lt;/STRONG&gt;: 4:30am to 12:30am, every 15 minutes.&lt;/P&gt;
 &lt;P&gt;Note:&lt;/P&gt;
 &lt;P&gt;Transfer between [A] trains and shuttle buses at &lt;STRONG&gt;Howard Beach&lt;/STRONG&gt;.&lt;/P&gt;
-&lt;P&gt;Transfer between shuttle buses and shuttle trains at &lt;STRONG&gt;Mott Av.&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;Transfer between shuttle buses and [H] trains at &lt;STRONG&gt;Mott Av.&lt;/STRONG&gt;&lt;/P&gt;
                 &lt;br/&gt;&lt;br/&gt;
               </text>
-    <Date>12/04/2012</Date>
-    <Time> 4:32PM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 3:31PM</Time>
   </line>
   <line>
     <name>BDFM</name>
-    <status>GOOD SERVICE</status>
-    <text />
-    <Date></Date>
-    <Time></Time>
+    <status>DELAYS</status>
+    <text>
+                    &lt;span class="TitleDelay"&gt;Delays&lt;/span&gt;
+                    &lt;span class="DateStyle"&gt;
+                    &amp;nbsp;Posted:&amp;nbsp;12/06/2012&amp;nbsp; 3:31PM
+                    &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;
+                  Due to signal problems at the &lt;STRONG&gt;23 Street Station&lt;/STRONG&gt;, please expect delays in downtown [F] and [M] trains at this time.
+                &lt;br/&gt;&lt;br/&gt;
+              </text>
+    <Date>12/06/2012</Date>
+    <Time> 3:31PM</Time>
   </line>
   <line>
     <name>G</name>
@@ -79,7 +100,7 @@
     <text>
                     &lt;span class="TitleServiceChange" &gt;Service Change&lt;/span&gt;
                     &lt;span class="DateStyle"&gt;
-                    &amp;nbsp;Posted:&amp;nbsp;12/04/2012&amp;nbsp; 3:51PM
+                    &amp;nbsp;Posted:&amp;nbsp;12/06/2012&amp;nbsp; 3:32PM
                     &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;
                   &lt;P&gt;[R] train service operates in two sections all times until further notice:&lt;/P&gt;
 &lt;P&gt;1. Between &lt;STRONG&gt;Forest Hills-71 Av&lt;/STRONG&gt; and &lt;STRONG&gt;Whitehall St&lt;/STRONG&gt; ( Days &amp; Evenings)&lt;/P&gt;
@@ -91,8 +112,8 @@
 &lt;P&gt;Reminder: On weekends, [5] service does not operate in Brooklyn.&lt;/P&gt;
                 &lt;br/&gt;&lt;br/&gt;
               </text>
-    <Date>12/04/2012</Date>
-    <Time> 3:51PM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 3:32PM</Time>
   </line>
   <line>
     <name>S</name>
@@ -111,22 +132,10 @@
 </subway><bus>
   <line>
     <name>B1 - B83</name>
-    <status>DELAYS</status>
-    <text>
-                  &lt;span class="TitleDelay"&gt;Delays&lt;/span&gt;
-                  &lt;span class="DateStyle"&gt;
-                  &amp;nbsp;Posted:&amp;nbsp;12/04/2012&amp;nbsp; 3:51PM
-                  &lt;/span&gt;
-                  &lt;br/&gt;
-                  &lt;br/&gt;
-                &lt;P&gt;B62 buses detoured due to FDNY activity.&lt;/P&gt;
-&lt;P&gt;Northbound: via Wythe Av, left on Clymer Av, right on Ross St, left on Bedford Av, right on Division Av and regular route.&lt;/P&gt;
-&lt;P&gt;Buses will make corresponding stops.&lt;/P&gt;
-              &lt;br/&gt;
-              &lt;br/&gt;
-            </text>
-    <Date>12/04/2012</Date>
-    <Time> 3:51PM</Time>
+    <status>GOOD SERVICE</status>
+    <text />
+    <Date></Date>
+    <Time></Time>
   </line>
   <line>
     <name>B100 - B103</name>
@@ -172,7 +181,7 @@
 &lt;br&gt;
 &lt;br&gt;Buses are bypassing the Gun Hill Rd at Bronxwood Av bus stop.
 &lt;br&gt;
-&lt;br&gt;&lt;b&gt;Eastbound/Westbound&lt;/b&gt;:  Customers are advised to use the
+&lt;br&gt;&lt;b&gt;Eastbound/Westbound&lt;/b&gt;: Customers are advised to use the
 &lt;br&gt;temporary bus stop on Gun Hill Rd at Colden Av.
 &lt;br&gt;
 &lt;br&gt;&amp;#149; Please allow additional travel time. 
@@ -239,18 +248,18 @@
                   &lt;br/&gt;
                 &lt;a class="plannedWorkDetailLink" onclick=ShowHide(40426);&gt;
 &lt;b&gt;M20 and M22 bus stop change due to Construction 
-&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;div id= 40426 class="plannedWorkDetail" &gt;&lt;/b&gt;All Times
+&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;div id= 40426 class="plannedWorkDetail" &gt;&lt;/b&gt;All times
 &lt;br&gt;
 &lt;br&gt;Temporary bus stop change due to construction.
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt;M20 Southbound&lt;/b&gt;:  Buses will bypass the Chambers St
+&lt;br&gt;at West Broadway stop.
 &lt;br&gt;
 &lt;br&gt;&lt;b&gt;M22 Westbound&lt;/b&gt;: Buses will bypass stops on Chambers
 &lt;br&gt;St at Church St and West Broadway.
 &lt;br&gt;
-&lt;br&gt;&lt;b&gt;M20 Southbound&lt;/b&gt;:  Buses will bypass the Chambers St at
-&lt;br&gt;West Broadway stop.
-&lt;br&gt;
-&lt;br&gt;Buses will make stops on West Broadway between Reade and 
-&lt;br&gt;Chambers Sts.
+&lt;br&gt;Buses will make stops on West Broadway between Reade
+&lt;br&gt;and Chambers Sts.
 &lt;br&gt;
 &lt;br&gt;&amp;#149; Please allow additional travel time.
 &lt;br&gt;&lt;/font&gt;&lt;b&gt;
@@ -303,7 +312,7 @@
     <text>
                   &lt;span class="TitleServiceChange" &gt;Service Change&lt;/span&gt;
                   &lt;span class="DateStyle"&gt;
-                  &amp;nbsp;Posted:&amp;nbsp;12/04/2012&amp;nbsp; 3:52PM
+                  &amp;nbsp;Posted:&amp;nbsp;12/06/2012&amp;nbsp; 3:34PM
                   &lt;/span&gt;
                   &lt;br/&gt;
                   &lt;br/&gt;
@@ -318,14 +327,56 @@
             
                   &lt;span class="TitleServiceChange" &gt;Service Change&lt;/span&gt;
                   &lt;span class="DateStyle"&gt;
-                  &amp;nbsp;Posted:&amp;nbsp;12/04/2012&amp;nbsp; 3:45PM
+                  &amp;nbsp;Posted:&amp;nbsp;12/06/2012&amp;nbsp; 3:33PM
                   &lt;/span&gt;
                   &lt;br/&gt;
                   &lt;br/&gt;
-                &lt;P&gt;&lt;STRONG&gt;Q65 &lt;/STRONG&gt;bus service detoured due to DEP working on &lt;STRONG&gt;14 Rd&lt;/STRONG&gt; at &lt;STRONG&gt;113 St&lt;/STRONG&gt;. &lt;/P&gt;
-&lt;P&gt;Detours are as follows:&lt;/P&gt;
-&lt;P&gt;&lt;STRONG&gt;North-bound:&lt;/STRONG&gt; via College Point Blvd, left on 14 Av to regular route.&lt;/P&gt;
-&lt;P&gt;All corrseponding stops will be made along the detoured route.&lt;/P&gt;
+                &lt;P&gt;&lt;STRONG&gt;Q28&lt;/STRONG&gt; bus detoured due to DOT milling on Crocheron Av. &lt;/P&gt;
+&lt;P&gt;Detour as follows:&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;Westbound:&lt;/STRONG&gt; Via Francis Lewis Blvd, right on Northern Blvd, right on Utopia Pkwy, left on Crocheron Av and then regular route. &lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;Eastbound:&lt;/STRONG&gt; Via Crocheron Av, right on Utopia Pkwy, left on Northern Blvd, left on Francis Lewis and then regular route. &lt;/P&gt;
+&lt;P&gt;Please allow additional travel time.  &lt;/P&gt;
+              &lt;br/&gt;
+              &lt;br/&gt;
+            
+                  &lt;span class="TitleServiceChange" &gt;Service Change&lt;/span&gt;
+                  &lt;span class="DateStyle"&gt;
+                  &amp;nbsp;Posted:&amp;nbsp;12/06/2012&amp;nbsp; 3:33PM
+                  &lt;/span&gt;
+                  &lt;br/&gt;
+                  &lt;br/&gt;
+                &lt;P&gt;&lt;STRONG&gt;Q56&lt;/STRONG&gt; bus detoured, due to construction on Jamaica Av at Linwood St. &lt;/P&gt;
+&lt;P&gt;Detour as follows:&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;Eastbound:&lt;/STRONG&gt; Via Jamaica Av, right on Ridgewood Av, left on Hale Av, right on Jamaica Av and then regular route.&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;Westbound&lt;/STRONG&gt;: Via Jamaica Av, left on Highland Av, right on Arlington St, right on Jerome St, left on Jamaica Av and then regular route. &lt;/P&gt;
+&lt;P&gt;Please allow additional travel time.  &lt;/P&gt;
+              &lt;br/&gt;
+              &lt;br/&gt;
+            
+                  &lt;span class="TitleServiceChange" &gt;Service Change&lt;/span&gt;
+                  &lt;span class="DateStyle"&gt;
+                  &amp;nbsp;Posted:&amp;nbsp;12/06/2012&amp;nbsp; 3:32PM
+                  &lt;/span&gt;
+                  &lt;br/&gt;
+                  &lt;br/&gt;
+                &lt;P&gt;&lt;STRONG&gt;Q15&lt;/STRONG&gt; bus detoured due to DOT paving on 154 St between 13 Av and Powells Cove Blvd. &lt;/P&gt;
+&lt;P&gt;Detour as follows:&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;Northbound towards Beechhurst:&lt;/STRONG&gt; Via 154 St, right on 14 Av,left on 154 S, right on 14 Av, left on 157 St, right on Powells Cove Blvd and then regular route.  &lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;Southbound towards Flushing:&lt;/STRONG&gt; Via  Powells Cove Blvd, left on 160 St, right on Cross Island Pkwy and then regular route.   &lt;/P&gt;
+&lt;P&gt;Please allow additional travel time.  &lt;/P&gt;
+              &lt;br/&gt;
+              &lt;br/&gt;
+            
+                  &lt;span class="TitleServiceChange" &gt;Service Change&lt;/span&gt;
+                  &lt;span class="DateStyle"&gt;
+                  &amp;nbsp;Posted:&amp;nbsp;12/06/2012&amp;nbsp; 3:32PM
+                  &lt;/span&gt;
+                  &lt;br/&gt;
+                  &lt;br/&gt;
+                &lt;P&gt;&lt;STRONG&gt;Q65&lt;/STRONG&gt; bus service is detoured due to roadwork on 114 St and 14 Rd. Detour is as follows:&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;Northbound:&lt;/STRONG&gt; Via College Pt Blvd, left on 14 Av to regular route at 110 St. &lt;/P&gt;
+&lt;P&gt;Corresponding stops will be made on 14 Av.&lt;/P&gt;
+&lt;P&gt;Please allow extra time for travel.&lt;/P&gt;
               &lt;br/&gt;
               &lt;br/&gt;
             
@@ -347,8 +398,8 @@
               &lt;br/&gt;
               &lt;br/&gt;
             </text>
-    <Date>12/04/2012</Date>
-    <Time> 3:52PM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 3:34PM</Time>
   </line>
   <line>
     <name>QM1 - QM25</name>
@@ -412,8 +463,8 @@
     <status>GOOD SERVICE</status>
     <text></text>
     <url></url>
-    <Date>12/03/2012</Date>
-    <Time> 3:49PM</Time>
+    <Date>12/05/2012</Date>
+    <Time> 4:24PM</Time>
   </line>
   <line>
     <name>Henry Hudson</name>
@@ -442,27 +493,26 @@
   <line>
     <name>Brooklyn-Battery</name>
     <status>SERVICE CHANGE</status>
-    <text>&lt;P style="MARGIN: 0in 0in 0pt" class=MsoPlainText&gt;&lt;FONT face=Calibri&gt;Starting on Monday, November 19th, at 6 a.m. both tubes will be opened for traffic in both directions around the clock. TRUCKS ARE STILL BANNED UNTIL FURTHER NOTICE.&lt;/FONT&gt;&lt;/P&gt;
-&lt;P style="MARGIN: 0in 0in 0pt" class=MsoPlainText&gt;&lt;FONT face=Calibri&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;</text>
+    <text>&lt;P style="MARGIN: 0in 0in 0pt" class=MsoPlainText&gt;&lt;FONT face=Calibri&gt;The HLC Tunnel is&amp;nbsp;open for passenger car traffic in both directions around the clock. At this time commercial traffic is being permitted Brooklyn bound only.&lt;/FONT&gt;&lt;FONT face=Calibri&gt;&lt;/FONT&gt;&lt;/P&gt;</text>
     <url></url>
-    <Date>12/03/2012</Date>
-    <Time> 8:18AM</Time>
+    <Date>12/05/2012</Date>
+    <Time> 2:49PM</Time>
   </line>
   <line>
     <name>Queens Midtown</name>
     <status>GOOD SERVICE</status>
     <text></text>
     <url></url>
-    <Date>11/21/2012</Date>
-    <Time> 7:44AM</Time>
+    <Date>12/05/2012</Date>
+    <Time> 1:33PM</Time>
   </line>
   <line>
     <name>Robert F. Kennedy</name>
-    <status>DELAYS</status>
-    <text>&lt;P&gt;RFK REPORTS A DISABLED 5 AXLE TRUCK&lt;FONT size=3&gt; ON BOUND FROM QUEENS ONE LANE BLOCKED EXPECT DELAYS&lt;/FONT&gt;&lt;/P&gt;</text>
+    <status>GOOD SERVICE</status>
+    <text></text>
     <url></url>
     <Date>12/04/2012</Date>
-    <Time> 4:29PM</Time>
+    <Time> 6:10PM</Time>
   </line>
   <line>
     <name>Cross Bay</name>
@@ -484,74 +534,95 @@
   <line>
     <name>City Terminal Zone</name>
     <status>SERVICE CHANGE</status>
-    <text>&lt;FONT color=#808080 size=5&gt;&lt;B&gt;&lt;U&gt;City Zone Customers:&lt;/U&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;BR&gt;&lt;BR&gt;The LIRR is currently operating on a near-normal reduced weekday schedule with canceled, combined and diverted trains during the rush hours.&amp;nbsp; Regrettably, regular rush-hour service cannot resume until Amtrak, which owns and operates the East River Tunnels, completes repairs to the two tunnels that flooded during Superstorm Sandy. The tunnels were re-opened on November 12 following temporary repairs by Amtrak, but these temporary repairs do not provide the capacity necessary to accommodate all of the LIRR’s rush-hour trains. As a result, the LIRR developed and implemented a contingency train plan for the AM and PM rush hours. City Zone Customers are advised to check the LIRR’s “Schedules &amp;amp; Fares” webpage @ http://lirr42.mta.info/ and use the drop-down menu to select their boarding and destination stations, then the date and time of travel.&amp;nbsp; All storm-related changes have been entered into this point-to-point schedule system.</text>
+    <text>&lt;P&gt;&lt;FONT color=#000000&gt;&lt;FONT size=5&gt;&lt;B&gt;&lt;U&gt;City Zone&amp;nbsp;Customers:&lt;/U&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;BR&gt;&lt;/FONT&gt;&lt;/P&gt;
+&lt;P&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;BR&gt;&lt;BR&gt;The LIRR will begin operating on a weekday schedule starting Monday, November 12, as two of the Amtrak East River Tunnels flooded during the superstorm are reopened following temporary repairs. These temporary repairs, which have allowed the tunnels to be reopened, reduce the number of trains which can travel through the tunnels. As a result, it is necessary to cancel and divert some trains during the morning and evening rush hours, which will continue through the end of the year while Amtrak continues to make permanent repairs.&lt;/P&gt;</text>
     <url></url>
-    <Date>12/03/2012</Date>
-    <Time> 5:50PM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 2:03PM</Time>
   </line>
   <line>
     <name>Babylon</name>
     <status>SERVICE CHANGE</status>
-    <text>&lt;FONT color=#006400 size=5&gt;&lt;B&gt;&lt;U&gt;Babylon Branch Customers:&lt;/U&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;BR&gt;&lt;BR&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;BR&gt;&lt;BR&gt;&lt;B&gt;AM Peak Affected Babylon Trains&lt;/B&gt;&lt;BR&gt;
+    <text>&lt;P&gt;&lt;FONT color=#006400 size=5&gt;&lt;B&gt;&lt;U&gt;Babylon Branch Customers:&lt;/U&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;BR&gt;&lt;/P&gt;
+&lt;P class=MsoPlainText style="MARGIN: 0in 0in 0pt"&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P class=MsoPlainText style="MARGIN: 0in 0in 0pt"&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;BR&gt;&lt;BR&gt;&lt;B&gt;AM Peak Affected Babylon Trains&lt;/B&gt;&lt;BR&gt;&lt;/P&gt;
 &lt;UL&gt;
-&lt;LI&gt;The 6:57AM train from Freeport, due Penn Station at 7:40AM, will be diverted to Atlantic Terminal. Customers for Penn Station must transfer at Jamaica.&lt;/LI&gt;
-&lt;LI&gt;The 7:26AM train from Wantagh, due Penn Station at 8:16AM, is canceled. Customers will be accommodated by the 7:10AM train from Babylon, which will make added stops at Wantagh, Bellmore, and Merrick. &lt;/LI&gt;
-&lt;LI&gt;The 7:29AM train from Freeport, due Penn Station at 8:13AM, will be canceled at Jamaica, with added stops at Freeport, Baldwin and Rockville Centre. Customers will transfer to the next available westbound train to Penn Station.&lt;/LI&gt;
-&lt;LI&gt;The 7:48AM train from Wantagh, due Penn Station at 8:40AM, is canceled. Customers will be accommodated by the 7:29AM train from Babylon due Atlantic Terminal at 8:43AM. Customers for Penn Station must transfer at Jamaica.&lt;/LI&gt;
-&lt;LI&gt;The 8:10AM train from Freeport, due Penn Station at 8:50AM, is canceled. Customers will be accommodated by the 7:45AM train from Babylon, which will make added stops at Freeport, Baldwin and Rockville Centre.&lt;/LI&gt;
-&lt;LI&gt;The 8:25AM train from Freeport, due Penn Station at 9:08AM, is canceled. Customers will be accommodated by the 8:03AM train from Babylon, which will make added stops at Baldwin and Rockville Centre.&lt;/LI&gt;&lt;/UL&gt;&lt;B&gt;PM Peak Affected Babylon Trains&lt;/B&gt;&lt;BR&gt;
+&lt;LI&gt;The 6:57AM train from Freeport, due Penn Station at 7:40AM, will be diverted to Atlantic Terminal. Customers for Penn Station must transfer at Jamaica. 
+&lt;LI&gt;The 7:26AM train from Wantagh, due Penn Station at 8:16AM, is canceled. Customers will be accommodated by the 7:10AM train from Babylon, which will make added stops at Wantagh, Bellmore, and Merrick. 
+&lt;LI&gt;The 7:29AM train from Freeport, due Penn Station at 8:13AM, will be canceled at Jamaica, with added stops at Freeport, Baldwin and Rockville Centre. Customers will transfer to the next available westbound train to Penn Station. 
+&lt;LI&gt;The 7:48AM train from Wantagh, due Penn Station at 8:40AM, is canceled. Customers will be accommodated by the 7:29AM train from Babylon due Atlantic Terminal at 8:43AM. Customers for Penn Station must transfer at Jamaica. 
+&lt;LI&gt;The 8:10AM train from Freeport, due Penn Station at 8:50AM, is canceled. Customers will be accommodated by the 7:45AM train from Babylon, which will make added stops at Freeport, Baldwin and Rockville Centre. 
+&lt;LI&gt;The 8:25AM train from Freeport, due Penn Station at 9:08AM, is canceled. Customers will be accommodated by the 8:03AM train from Babylon, which will make added stops at Baldwin and Rockville Centre.&lt;/LI&gt;&lt;/UL&gt;&lt;B&gt;PM Peak Affected Eastbound Babylon Trains&lt;/B&gt;&lt;BR&gt;
 &lt;UL&gt;
-&lt;LI&gt;The 4:34PM train from Penn Station, due Babylon at 5:39PM, is canceled. Customers will be accommodated by the 4:37PM train from Penn Station, which will stop at Jamaica, St. Albans, Lynbrook, Rockville Centre and then all local stops to Babylon.&lt;/LI&gt;
-&lt;LI&gt;The 4:52PM train from Penn Station, due Babylon at 5:55PM, is canceled. Customers will be accommodated by the 5:03PM train from Penn Station, with a stops at Rockville Centre, and then all local stops to Babylon.&lt;/LI&gt;
-&lt;LI&gt;The 5:13PM train from Penn Station, due Wantagh at 6:19PM, is canceled. Customers will be accommodated by the 5:19PM train from Penn Station, with stops at Woodside, Jamaica, Merrick, and then all local stops to Babylon. &lt;/LI&gt;
-&lt;LI&gt;The 5:24PM train from Penn Station, due Freeport at 6:10PM, is canceled. Customers will be accommodated by the 5:35PM Huntington train from Penn Station, due Jamaica at 5:55PM, for transfer to the 6:05PM Babylon train with a stop at Rockville Centre, and then all local stops to Babylon. &lt;/LI&gt;
-&lt;LI&gt;The 5:36PM train from Penn Station, due Babylon at 6:40PM, is canceled. Customers will be accommodated by the 5:40PM train from Penn Station, which will stop at Merrick, and then all local stops to Babylon.&lt;/LI&gt;
-&lt;LI&gt;The 6:03PM train from Babylon due in Penn at 7:04PM is canceled. Customers will be accommodated by the next available westbound.&lt;/LI&gt;
-&lt;LI&gt;The 6:05PM train from Penn Station, due Wantagh at 6:51PM is canceled. Customers will be accommodated by the 6:10PM train from Penn Station, with a stop at Rockville Centre, and then all local stops to Wantagh. &lt;/LI&gt;
-&lt;LI&gt;The 6:33PM train from Penn Station, due Babylon at 7:35PM, is canceled. Customers will be accommodated by the 6:36PM train from Penn Station,&amp;nbsp;with stops at Jamaica, St. Albans, Rockville Centre, and then all local stops to Babylon.&lt;/LI&gt;&lt;/UL&gt;</text>
+&lt;LI&gt;The 4:34PM train from Penn Station, due Babylon at 5:39PM, is canceled. Customers will be accommodated by the 4:37PM train from Penn Station, which will stop at Jamaica, St. Albans, Lynbrook, Rockville Centre and then all local stops to Babylon. 
+&lt;LI&gt;The 5:13PM train from Penn Station, due Wantagh at 6:19PM, is canceled. Customers will be accommodated by the 5:19PM train from Penn Station, with stops at Woodside, Jamaica, Merrick, and then all local stops to Babylon. 
+&lt;LI&gt;The 5:24PM train from Penn Station, due Freeport at 6:10PM, is canceled. Customers will be accommodated by the 5:35PM Huntington train from Penn Station, due Jamaica at 5:55PM, for transfer to the 6:05PM Babylon train with a stop at Rockville Centre, and then all local stops to Babylon. 
+&lt;LI&gt;The 5:36PM train from Penn Station, due Babylon at 6:40PM, is canceled. Customers will be accommodated by the 5:40PM train from Penn Station, which will stop at Merrick, and then all local stops to Babylon. 
+&lt;LI&gt;The 6:05PM train from Penn Station, due Wantagh at 6:51PM is canceled. Customers will be accommodated by the 6:10PM train from Penn Station, with a stop at Rockville Centre, and then all local stops to Wantagh. &lt;/LI&gt;&lt;/UL&gt;
+&lt;P&gt;&lt;STRONG&gt;PM Off-Peak Affected Westbound Babylon Train&lt;/STRONG&gt;&lt;/P&gt;
+&lt;UL&gt;
+&lt;LI&gt;The 6:03PM train from Babylon due in Penn at 7:04PM is canceled. Customers will be accommodated by the next available westbound.&lt;/LI&gt;&lt;/UL&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;FONT face=Calibri&gt;&lt;/FONT&gt;</text>
     <url></url>
-    <Date>12/04/2012</Date>
-    <Time> 3:36PM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 2:03PM</Time>
   </line>
   <line>
     <name>Far Rockaway</name>
     <status>SERVICE CHANGE</status>
-    <text>&lt;font color="#A52A2A" size="5"&gt;&lt;b&gt;&lt;u&gt;Far Rockaway Branch Customers:&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;br&gt;&lt;br&gt;&lt;b&gt;AM Peak Affected Far Rockaway Trains&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;The 7:18AM train from Far Rockaway, due Atlantic Terminal at 8:11AM, will make added stops at Rosedale and Laurelton.&lt;/li&gt;&lt;li&gt;The 7:49AM train from Far Rockaway due Penn at 8:42AM, will make added stops at Rosedale, Laurelton and Locust Manor.&lt;/li&gt;&lt;li&gt;The 8:10AM from Far Rockaway, due Penn Station at 9:05AM, is canceled. Customers will be accommodated by the 8:21AM from Far Rockaway, which will be canceled at Jamaica. Customers for Penn Station must transfer at Jamaica. The Kew Gardens and Forest Hills stops for this train will be added to a Huntington westbound train at 8:54AM and 8:56AM, respectively. &lt;/li&gt;&lt;li&gt;The 8:21AM from Far Rockaway, due Penn Station at 9:17AM, will be canceled in Jamaica. Customers for Penn Station must transfer at Jamaica.&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;</text>
+    <text>&lt;P&gt;&lt;FONT color=#a52a2a size=5&gt;&lt;B&gt;&lt;U&gt;Far Rockaway Branch Customers:&lt;/U&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;BR&gt;&lt;BR&gt;&lt;/P&gt;
+&lt;P&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;BR&gt;&lt;BR&gt;&lt;B&gt;AM Peak Affected Far Rockaway Trains&lt;/B&gt;&lt;BR&gt;&lt;/P&gt;
+&lt;UL&gt;
+&lt;LI&gt;The 7:18AM train from Far Rockaway, due Atlantic Terminal at 8:11AM, will make added stops at Rosedale and Laurelton. 
+&lt;LI&gt;The 7:49AM train from Far Rockaway due Penn at 8:42AM, will make added stops at Rosedale, Laurelton and Locust Manor. 
+&lt;LI&gt;The 8:10AM from Far Rockaway, due Penn Station at 9:05AM, is canceled. Customers will be accommodated by the 8:21AM from Far Rockaway, which will be canceled at Jamaica. Customers for Penn Station must transfer at Jamaica. The Kew Gardens and Forest Hills stops for this train will be added to a Huntington westbound train at 8:54AM and 8:56AM, respectively. 
+&lt;LI&gt;The 8:21AM from Far Rockaway, due Penn Station at 9:17AM, will be canceled in Jamaica. Customers for Penn Station must transfer at Jamaica.&lt;/LI&gt;&lt;/UL&gt;&lt;BR&gt;</text>
     <url></url>
-    <Date>12/03/2012</Date>
-    <Time>12:12AM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 2:02PM</Time>
   </line>
   <line>
     <name>Hempstead</name>
     <status>SERVICE CHANGE</status>
-    <text>&lt;FONT color=#deb887 size=5&gt;&lt;B&gt;&lt;U&gt;Hempstead Branch Customers:&lt;/U&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;BR&gt;&lt;BR&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;BR&gt;&lt;BR&gt;&lt;B&gt;AM Peak Affected Hempstead Trains&lt;/B&gt;&lt;BR&gt;
+    <text>&lt;P&gt;&lt;FONT color=#deb887 size=5&gt;&lt;B&gt;&lt;U&gt;Hempstead Branch Customers:&lt;/U&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;BR&gt;&lt;/P&gt;
+&lt;P&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;BR&gt;&lt;BR&gt;&lt;B&gt;AM Peak Affected Hempstead Trains&lt;/B&gt;&lt;BR&gt;&lt;/P&gt;
 &lt;UL&gt;
 &lt;LI&gt;The 7:12AM from Hempstead, due Penn Station at 8:03AM, will terminate at Jamaica. Customers for Penn Station must transfer at Jamaica.&lt;/LI&gt;
-&lt;LI&gt;The 7:26AM from East Williston (7:31AM train from Mineola), due Penn Station 8:14AM, is canceled. Customers will be accommodated by the 7:29AM train from Hicksville, which will make added stops at Mineola, Merillon Ave., New Hyde Park, Floral Park, Queens Village, Hollis and Jamaica. The next train from East Williston will depart at 7:48AM. &lt;/LI&gt;
 &lt;LI&gt;The 7:38AM from Floral Park, due Penn Station at 8:14AM, is canceled. Customers will be accommodated by the 7:29AM train from Hicksville, which will make added stops at Mineola, Merillon Ave., New Hyde Park, Floral Park, Queens Village, Hollis and Jamaica.&lt;/LI&gt;&lt;/UL&gt;&lt;B&gt;PM Peak Affected Hempstead Train&lt;/B&gt;&lt;BR&gt;
 &lt;UL&gt;
 &lt;LI&gt;The 5:04PM train from Penn Station, due Hempstead at 5:57PM, is canceled. Customers will be accommodated by the 5:06PM Huntington train from Penn Station, due Jamaica at 5:25PM, making added stops at Forest Hills and Kew Gardens, for transfer to the 5:39PM Hempstead train with a stop at Hollis, and then all local stops to Hempstead. &lt;/LI&gt;&lt;/UL&gt;</text>
     <url></url>
-    <Date>12/04/2012</Date>
-    <Time> 3:27PM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 2:03PM</Time>
   </line>
   <line>
     <name>Long Beach</name>
     <status>SERVICE CHANGE</status>
-    <text>&lt;font color="#FFA500" size="5"&gt;&lt;u&gt;&lt;b&gt;Long Beach Branch Customers:&lt;/b&gt;&lt;/u&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;br&gt;&lt;br&gt;&lt;b&gt;AM Peak Affected Long Beach Trains&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;The 6:54AM from Long Beach, due Atlantic Terminal at 7:49AM, is canceled. Customers will be accommodated by the 7:04AM from Long Beach due Penn Station at 7:57AM, with an added stop at Jamaica. Customers for Atlantic Terminal must transfer at Jamaica.&lt;/li&gt;&lt;li&gt;The 7:23AM from Long Beach, due Penn Station at 8:22AM, is canceled. Customers will be accommodated by the 7:39AM from Long Beach due Penn Station at 8:32AM. &lt;/li&gt;&lt;li&gt;The 7:56AM from Long Beach, due Atlantic Terminal at 8:51AM, is canceled. Customers will be accommodated by the 8:03AM from Long Beach due Penn Station at 8:54AM. This train will make added stops at Valley Stream and Jamaica. Customers for Atlantic Terminal must transfer at Jamaica. &lt;/li&gt;&lt;li&gt;The 8:08AM from Long Beach, due Penn Station at 9:02AM, is canceled. Customers will be accommodated by the 8:38AM from Long Beach due Atlantic Terminal at 9:26AM. Customers for Penn Station must transfer at Jamaica.&lt;/li&gt;&lt;/ul&gt;&lt;b&gt;PM Peak Affected Long Beach Trains&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;The 4:40PM from Penn Station due Long Beach at 5:37PM, is canceled. Customers will be accommodated by the 5:00PM from Penn Station, due Long Beach 5:55PM. &lt;/li&gt;&lt;li&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels, the 5:20PM train from Penn due Long Beach at 6:11PM is canceled. Customers will be accommodated by the 5:23PM train from Penn Station, due Long Beach at 6:18PM.&lt;/li&gt;&lt;li&gt;The 7:33PM from Penn Station, due Long Beach at 8:26PM, is canceled. Customers will be accommodated by the 8:12PM from Atlantic Terminal, due Long Beach at 9:03PM. Customers at Penn Station should take the 8:08PM from Penn to Babylon and transfer at Jamaica for the Long Beach train.&lt;/li&gt;&lt;/ul&gt;</text>
+    <text>&lt;P&gt;&lt;FONT color=#ffa500 size=5&gt;&lt;U&gt;&lt;B&gt;Long Beach Branch Customers:&lt;/B&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;BR&gt;&lt;BR&gt;&lt;/P&gt;
+&lt;P&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;BR&gt;&lt;BR&gt;&lt;B&gt;AM Peak Affected Long Beach Trains&lt;/B&gt;&lt;BR&gt;&lt;/P&gt;
+&lt;UL&gt;
+&lt;LI&gt;The 6:54AM from Long Beach, due Atlantic Terminal at 7:49AM, is canceled. Customers will be accommodated by the 7:04AM from Long Beach due Penn Station at 7:57AM, with an added stop at Jamaica. Customers for Atlantic Terminal must transfer at Jamaica. 
+&lt;LI&gt;The 7:23AM from Long Beach, due Penn Station at 8:22AM, is canceled. Customers will be accommodated by the 7:39AM from Long Beach due Penn Station at 8:32AM. 
+&lt;LI&gt;The 7:56AM from Long Beach, due Atlantic Terminal at 8:51AM, is canceled. Customers will be accommodated by the 8:03AM from Long Beach due Penn Station at 8:54AM. This train will make added stops at Valley Stream and Jamaica. Customers for Atlantic Terminal must transfer at Jamaica. 
+&lt;LI&gt;The 8:08AM from Long Beach, due Penn Station at 9:02AM, is canceled. Customers will be accommodated by the 8:38AM from Long Beach due Atlantic Terminal at 9:26AM. Customers for Penn Station must transfer at Jamaica.&lt;/LI&gt;&lt;/UL&gt;&lt;B&gt;PM Peak Affected Long Beach Trains&lt;/B&gt;&lt;BR&gt;
+&lt;UL&gt;
+&lt;LI&gt;The 4:40PM from Penn Station due Long Beach at 5:37PM, is canceled. Customers will be accommodated by the 5:00PM from Penn Station, due Long Beach 5:55PM. 
+&lt;LI&gt;The 5:20PM train from Penn due Long Beach at 6:11PM is canceled. Customers will be accommodated by the 5:23PM train from Penn Station, due Long Beach at 6:18PM. &lt;/LI&gt;&lt;/UL&gt;</text>
     <url></url>
-    <Date>12/03/2012</Date>
-    <Time>12:13AM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 6:27AM</Time>
   </line>
   <line>
     <name>Montauk</name>
     <status>SERVICE CHANGE</status>
-    <text>&lt;p&gt;&lt;font color="#7fffd4" size="5"&gt;&lt;b&gt;&lt;u&gt;Montauk Branch Customers:&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following train will be canceled:&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;b&gt;AM Peak Affected Montauk Train&lt;/b&gt;&lt;br&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The 5:08AM from Speonk, due Penn Station at 7:02AM, will be canceled at Jamaica. Customers can take the 5:30AM train from Speonk. Customers for Penn Station must transfer at Jamaica.&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;</text>
+    <text>&lt;P&gt;&lt;FONT color=#7fffd4 size=5&gt;&lt;B&gt;&lt;U&gt;Montauk Branch Customers:&lt;/U&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;BR&gt;&lt;/P&gt;
+&lt;P&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following train will be canceled:&lt;BR&gt;&lt;/P&gt;
+&lt;P&gt;&lt;BR&gt;&lt;B&gt;AM Peak Affected Montauk Train&lt;/B&gt;&lt;BR&gt;&lt;/P&gt;
+&lt;UL&gt;
+&lt;LI&gt;The 5:08AM from Speonk, due Penn Station at 7:02AM, will be canceled at Jamaica. Customers can take the 5:30AM train from Speonk. Customers for Penn Station must transfer at Jamaica.&lt;/LI&gt;&lt;/UL&gt;&lt;BR&gt;</text>
     <url></url>
-    <Date>12/03/2012</Date>
-    <Time>10:55PM</Time>
+    <Date>12/05/2012</Date>
+    <Time> 6:25PM</Time>
   </line>
   <line>
     <name>Oyster Bay</name>
@@ -564,25 +635,42 @@
   <line>
     <name>Port Jefferson</name>
     <status>SERVICE CHANGE</status>
-    <text>&lt;font color="#000080" size="5"&gt;&lt;b&gt;&lt;u&gt;Port Jefferson Branch Customers:&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;br&gt;&lt;br&gt;&lt;b&gt;AM Peak Affected Port Jefferson Trains&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;The 7:26AM from East Williston (7:31AM train from Mineola), due Penn Station 8:14AM, is canceled. Customers will be accommodated by the 7:29AM train from Hicksville, which will make added stops at Mineola, Merillon Ave., New Hyde Park, Floral Park, Queens Village, Hollis and Jamaica. The next train from East Williston will depart at 7:48AM. &lt;/li&gt;&lt;li&gt;The 7:28AM from Cold Spring Harbor, due Penn Station at 8:25AM, is canceled. Customers will be accommodated by the 7:19AM from Huntington, which will operate four minutes later – departing Huntington at 7:23AM. Customers for Penn Station must transfer at Jamaica. &lt;/li&gt;&lt;li&gt;The 7:31AM train from Mineola, due Penn Station 8:14AM, is canceled. Customers will be accommodated by the 7:29AM train from Hicksville, which will make added stops at Mineola, Merillon Avenue, New Hyde Park, Floral Park, Queens Village, Hollis and Jamaica.&lt;/li&gt;&lt;li&gt;The 7:37AM train from Huntington, due Penn Station 8:37AM, will make an added stop at Jamaica.&lt;/li&gt;&lt;li&gt;The 8:04AM train from Huntington due Penn at 9:08AM will make added stops at Kew Gardens and Forest Hills. &lt;/li&gt;&lt;/ul&gt;&lt;b&gt;PM Peak Affected Port Jefferson Trains&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;The 5:35PM train from Penn due Huntington at 6:34PM, will make added station stops in Forest Hills at 5:49PM, and in Kew Gardens at 5:41PM.&lt;/li&gt;&lt;li&gt;The 5:46PM train from Penn Station, due Huntington at 6:51PM, has been canceled. Customers will be accommodated by the 6:08PM train from Penn Station, with stops at Woodside, Jamaica, New Hyde Park, and then all local stops to Huntington. &lt;/li&gt;&lt;li&gt;The 6:29PM train from Huntington due Penn at 7:34PM, will make added station stops at Merillon Avenue and New Hyde Park.&lt;/li&gt;&lt;li&gt;The 7:05PM train from Huntington due Penn Station at 8:09PM is canceled. Customers will be accommodated by the next westbound.&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;</text>
+    <text>&lt;P&gt;&lt;FONT color=#000080 size=5&gt;&lt;B&gt;&lt;U&gt;Port Jefferson Branch Customers:&lt;/U&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;
+&lt;P&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;BR&gt;&lt;BR&gt;&lt;B&gt;AM Peak Affected Port Jefferson Trains&lt;/B&gt;&lt;BR&gt;&lt;/P&gt;
+&lt;UL&gt;
+&lt;LI&gt;The 7:28AM from Cold Spring Harbor, due Penn Station at 8:25AM, is canceled. Customers will be accommodated by the 7:19AM from Huntington, which will operate four minutes later – departing Huntington at 7:23AM. Customers for Penn Station must transfer at Jamaica. &lt;/LI&gt;
+&lt;LI&gt;The 7:31AM train from Mineola, due Penn Station 8:14AM, is canceled. Customers will be accommodated by the 7:29AM train from Hicksville, which will make added stops at Mineola, Merillon Avenue, New Hyde Park, Floral Park, Queens Village, Hollis and Jamaica. 
+&lt;LI&gt;The 7:37AM train from Huntington, due Penn Station 8:37AM, will make an added stop at Jamaica. 
+&lt;LI&gt;The 8:04AM train from Huntington due Penn at 9:08AM will make added stops at Kew Gardens and Forest Hills. &lt;/LI&gt;&lt;/UL&gt;&lt;B&gt;PM Peak Affected Port Jefferson Trains&lt;/B&gt;&lt;BR&gt;
+&lt;UL&gt;
+&lt;LI&gt;The 5:35PM train from Penn due Huntington at 6:34PM, will make added station stops in Forest Hills at 5:49PM, and in Kew Gardens at 5:41PM. 
+&lt;LI&gt;The 5:46PM train from Penn Station, due Huntington at 6:51PM, has been canceled. Customers will be accommodated by the 6:08PM train from Penn Station, with stops at Woodside, Jamaica, New Hyde Park, and then all local stops to Huntington. 
+&lt;LI&gt;The 6:29PM train from Huntington due Penn at 7:34PM, will make added station stops at Merillon Avenue and New Hyde Park. 
+&lt;LI&gt;The 7:05PM train from Huntington due Penn Station at 8:09PM is canceled. Customers will be accommodated by the next westbound.&lt;/LI&gt;&lt;/UL&gt;&lt;BR&gt;</text>
     <url></url>
-    <Date>12/03/2012</Date>
-    <Time> 5:33AM</Time>
+    <Date>12/05/2012</Date>
+    <Time> 2:24PM</Time>
   </line>
   <line>
     <name>Port Washington</name>
     <status>SERVICE CHANGE</status>
-    <text>&lt;font color="#FF0000" size="5"&gt;&lt;u&gt;&lt;b&gt;Port Washington Branch Customers:&lt;/b&gt;&lt;/u&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;br&gt;&lt;br&gt;&lt;b&gt;PM Peak Affected Port Washington Trains&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;The 4:22PM train from Penn Station, due Port Washington at 4:58PM, has been canceled. Customers will be accommodated by the 4:25PM train from Penn Station, making all local stops to Port Washington.&lt;/li&gt;&lt;li&gt;The 4:43PM train from Penn Station, due Port Washington at 5:21PM, is canceled. Customers will be accommodated by the 4:46PM train from Penn Station, which will make all local stops to Port Washington.&lt;/li&gt;&lt;li&gt;The 5:11PM train from Penn Station, due Port Washington at 5:47PM, is canceled. Customers will be accommodated by the 5:14PM train from Penn Station, with a stop at Bayside and then all local stops to Port Washington.&lt;/li&gt;&lt;li&gt;The 5:26PM train from Penn Station, due Port Washington at 6:04PM, is canceled. Customers will be accommodated by the 5:29PM train from Penn Station, with a stop at Woodside and then all local stops to Port Washington.&lt;/li&gt;&lt;li&gt;The 5:44PM train from Great Neck due in Penn at 6:17PM is canceled. Customers will be accommodated by the next available westbound.&lt;/li&gt;&lt;li&gt;The 5:50PM train from Penn Station, due Great Neck at 6:19PM is canceled. Customers will be accommodated by the 5:56PM train from Penn Station with a stop at Woodside, and then all stops to Great Neck.&lt;/li&gt;&lt;li&gt;The 6:23PM train from Great Neck due in Penn at 6:58PM is canceled. Customers will be accommodated by the next available westbound.&lt;/li&gt;&lt;li&gt;The 6:44PM train from Great Neck due in Penn at 7:15PM is canceled. Customers will be accommodated by the next available westbound.&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;</text>
+    <text>&lt;FONT color=#ff0000 size=5&gt;&lt;U&gt;&lt;B&gt;Port Washington Branch Customers:&lt;/B&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;BR&gt;&lt;BR&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;BR&gt;&lt;BR&gt;&lt;U&gt;&lt;B&gt;PM Peak Affected Port Washington&amp;nbsp;Eastbound Trains&lt;/B&gt;&lt;BR&gt;&lt;/U&gt;
+&lt;UL&gt;
+&lt;LI&gt;The 4:43PM train from Penn Station, due Port Washington at 5:21PM, is canceled. Customers will be accommodated by the 4:46PM train from Penn Station, which will make all local stops to Port Washington.&lt;/LI&gt;
+&lt;LI&gt;The 5:11PM train from Penn Station, due Port Washington at 5:47PM, is canceled. Customers will be accommodated by the 5:14PM train from Penn Station, with a stop at Bayside and then all local stops to Port Washington.&lt;/LI&gt;
+&lt;LI&gt;The 5:50PM train from Penn Station, due Great Neck at 6:19PM is canceled. Customers will be accommodated by the 5:56PM train from Penn Station with a stop at Woodside, and then all stops to Great Neck.&lt;/LI&gt;&lt;/UL&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;U&gt;PM Off-Peak Affected Port Washington&amp;nbsp;Westbound Trains&lt;/U&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;UL&gt;
+&lt;LI&gt;The 5:44PM train from Great Neck due in Penn at 6:17PM is canceled. Customers will be accommodated by the next available westbound.&lt;/LI&gt;
+&lt;LI&gt;The 6:44PM train from Great Neck due in Penn at 7:15PM is canceled. Customers will be accommodated by the next available westbound.&lt;/LI&gt;&lt;/UL&gt;&lt;BR&gt;</text>
     <url></url>
-    <Date>12/03/2012</Date>
-    <Time>12:18AM</Time>
+    <Date>12/05/2012</Date>
+    <Time>12:22PM</Time>
   </line>
   <line>
     <name>Ronkonkoma</name>
-    <status>DELAYS</status>
+    <status>SERVICE CHANGE</status>
     <text>&lt;P&gt;&lt;FONT color=#800080 size=5&gt;&lt;B&gt;&lt;U&gt;Ronkonkoma Branch Customers:&lt;/U&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;BR&gt;&lt;/P&gt;
-&lt;UL&gt;
-&lt;LI&gt;&lt;STRONG&gt;&lt;EM&gt;There are delays of up to 15 minutes in both directions east of Farmingdale due to ongoing signal problems. &lt;/EM&gt;&lt;/STRONG&gt;&lt;/LI&gt;&lt;/UL&gt;
 &lt;P&gt;Due to ongoing reduced capacity in Amtrak's East River tunnels as a result of damage caused by Hurricane Sandy, the following trains will be canceled or diverted:&lt;BR&gt;&lt;BR&gt;&lt;B&gt;AM Peak Affected Ronkonkoma Trains&lt;/B&gt;&lt;BR&gt;&lt;/P&gt;
 &lt;UL&gt;
 &lt;LI&gt;The 6:54AM train from Central Islip, due Penn Station at 8:06AM, is canceled. Customers will be accommodated by the 6:56AM train from Ronkonkoma. 
@@ -592,16 +680,16 @@
 &lt;LI&gt;The 6:25PM train from Farmingdale due in Penn at 7:22PM is canceled. Customers will be accommodated by the next available westbound. 
 &lt;LI&gt;The 7:13PM train from Ronkonkoma will make added station stops at Merillon Avenue and New Hyde Park.&lt;/LI&gt;&lt;/UL&gt;</text>
     <url></url>
-    <Date>12/04/2012</Date>
-    <Time> 4:23PM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 6:49AM</Time>
   </line>
   <line>
     <name>West Hempstead</name>
-    <status>SERVICE CHANGE</status>
-    <text>&lt;FONT color=#0000ff size=5&gt;&lt;B&gt;&lt;U&gt;West Hempstead Branch Customers:&lt;/U&gt;&lt;/B&gt;&lt;/FONT&gt;&lt;BR&gt;&lt;BR&gt;The LIRR is currently operating on a near-normal reduced weekday schedule with canceled, combined and diverted trains during the rush hours.&amp;nbsp; Regrettably, regular rush-hour service cannot resume until Amtrak, which owns and operates the East River Tunnels, completes repairs to the two tunnels that flooded during Superstorm Sandy. The tunnels were re-opened on November 12 following temporary repairs by Amtrak, but these temporary repairs do not provide the capacity necessary to accommodate all of the LIRR’s rush-hour trains. As a result, the LIRR developed and implemented a contingency train plan for the AM and PM rush hours.&amp;nbsp; West Hempstead customers are advised check the LIRR’s “Schedules &amp;amp; Fares” webpage @ http://lirr42.mta.info/ and use the drop-down menu to select their boarding and destination stations, then the date and time of travel.&amp;nbsp; All storm-related changes have been entered into this point-to-point schedule system.</text>
+    <status>GOOD SERVICE</status>
+    <text></text>
     <url></url>
-    <Date>12/04/2012</Date>
-    <Time> 3:36PM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 8:26AM</Time>
   </line>
 </LIRR><MetroNorth>
   <line>
@@ -609,16 +697,16 @@
     <status>GOOD SERVICE</status>
     <text></text>
     <url></url>
-    <Date>11/13/2012</Date>
-    <Time>10:21AM</Time>
+    <Date>12/06/2012</Date>
+    <Time>10:56AM</Time>
   </line>
   <line>
     <name>Harlem</name>
     <status>GOOD SERVICE</status>
     <text></text>
     <url></url>
-    <Date>12/04/2012</Date>
-    <Time> 8:53AM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 9:08AM</Time>
   </line>
   <line>
     <name>Wassaic</name>
@@ -633,8 +721,8 @@
     <status>GOOD SERVICE</status>
     <text></text>
     <url></url>
-    <Date>12/04/2012</Date>
-    <Time> 8:47AM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 9:09AM</Time>
   </line>
   <line>
     <name>New Canaan</name>
@@ -649,8 +737,8 @@
     <status>GOOD SERVICE</status>
     <text></text>
     <url></url>
-    <Date>11/20/2012</Date>
-    <Time>11:13PM</Time>
+    <Date>12/06/2012</Date>
+    <Time> 5:12AM</Time>
   </line>
   <line>
     <name>Waterbury</name>
