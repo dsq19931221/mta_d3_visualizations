@@ -1,16 +1,9 @@
 require "rubygems"
-require "bundler/setup"
+#require "bundler/setup"
 require 'nokogiri'
 require 'mechanize'
 require 'open-uri'
 require 'json'
-
-
-#File structure
-#JS-js
-#data/xml, json, etc.
-#viz/html
-#processing/rb
 
 def fetch_data
 	uri = 'http://www.mta.info/developers/data/bandt/tbta_plaza/PLAZA_DAILY_TRAFFIC_20121126.xml'
@@ -23,6 +16,13 @@ def write_to_raw_file
 	
 	fh = File.open('daily_plaza_traffic.xml', 'w' )
 	fh.write(fetch_data)
+	fh.close
+end
+
+def write_json_to_file
+	Dir.chdir(File.join(File.dirname(__FILE__), '..', 'data'))
+	fh = File.open('daily_plaza_traffic_processed.json', 'w')
+	fh.write(make_json)
 	fh.close
 end
 
@@ -81,9 +81,10 @@ def make_json
     end
   end
   
-  puts plz_traffic.to_json
+  plz_traffic.to_json
 
   
 end#make_json
 
-make_json
+#write_to_raw_file
+write_json_to_file
