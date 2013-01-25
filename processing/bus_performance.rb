@@ -57,27 +57,25 @@ def parse
   indicator_sections.each do |indicator_section|
 	   indicator_name = indicator_section.css('INDICATOR_NAME').text
 	   if indicator_name == data_points[:mean_dist]
-		   mean_dist << indicator_section.css('MONTHLY_ACTUAL').text
+	     mean_dist << indicator_section.css('MONTHLY_ACTUAL').text.split(',').join().to_f
 	   elsif indicator_name == data_points[:coll_inj]
-	     coll_inj << indicator_section.css('MONTHLY_ACTUAL').text
+	     coll_inj << indicator_section.css('MONTHLY_ACTUAL').text.split(',').join().to_f
 	   elsif indicator_name == data_points[:cust_acc]
-	     cust_acc << indicator_section.css('MONTHLY_ACTUAL').text 
+	     cust_acc << indicator_section.css('MONTHLY_ACTUAL').text.split(',').join().to_f
 	   end
 	   
   end
   
   [mean_dist,coll_inj,cust_acc].transpose.each{|x,y,z|
-    
-    if x.empty? || y.empty? || z.empty?
-      next
-    elsif x == ".00" || y == ".00" || z == ".00"
+
+    if x == 0.0 || y == 0.0 || z == 0.0
       next
     end
     
     bus_perf_arr_hshs << { :dist_between_fail => x, :collisions_with_injury => y, :customer_accident_rate => z  }
    }
      
-  bus_perf_arr_hshs
+  bus_perf_arr_hshs.to_json
 end#def
 
 def write_json_to_file
