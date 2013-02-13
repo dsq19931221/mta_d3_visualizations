@@ -76,7 +76,7 @@ def parse
    }
      
   bus_perf_arr_hshs.to_json
-end#def
+end#defparse
 
 def write_json_to_file
 	Dir.chdir(File.join(File.dirname(__FILE__), '..', 'data'))
