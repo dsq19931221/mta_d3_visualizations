@@ -104,7 +104,13 @@ end
 
 def make_gc_hash
 	grand_central = {}
-	puts parse_locn_lines(extract_gc_locns)
+	arr = parse_locn_lines(extract_gc_locns)
+	
+	arr.each { |x|
+		
+		puts "x[0]:#{x[0]}:;x[1]:#{x[1]}" }
+	
+	
 end
 
 make_gc_hash
