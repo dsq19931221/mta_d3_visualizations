@@ -74,15 +74,18 @@ def extract_ts_locns
 	ts
 end
 
+
 def parse_locn_lines(arr)
 	time_counts = []
 	arr.each do |line|
 		arr = line.split(',')
-		arr.shift(3)
+		#arr.shift(3)
 		
 		arr.each_with_index do |str, idx|
 			
 			if str == 'REGULAR'
+				locn = arr[0]
+				key = arr[2]
 				time = arr[idx-1]
 				date = arr[idx-2]
 				entries = arr[idx+1].to_i
@@ -90,7 +93,7 @@ def parse_locn_lines(arr)
 				
 				ms_date = date_to_ms(arr[idx-2], arr[idx-1])
 				
-				time_counts << [entries, exits, ms_date]
+				time_counts << [locn, key, entries, exits, ms_date]
 				
 			end
 		end
