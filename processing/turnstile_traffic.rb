@@ -103,28 +103,42 @@ def parse_locn_lines(arr)
 end
 
 def make_gc_hash
-	grand_central = {}
-	processed_ts = []
+	grand_central = []
 	set_key = ''
 	arr = parse_locn_lines(extract_gc_locns)
 	
 	arr.each_index do |i|
 	  
-	  #if set_key != '' || set_key == arr[i][1]
-	    entries = arr[i][2] - arr[i-1][2]
-	    exits = arr[i][3] - arr[i-1][3]
-	    
-	    
-	    #processed_ts << [entries + exits, arr[i][4]]
-	   puts "entries: #{entries}  exits: #{exits}" 
-	  #elsif set_key == '' || set_key != arr[i][1]
-	    set_key == arr[i][1]
-	    
-	  #end
-	  #puts "locn: #{arr[i][0]}  key: #{arr[i][1]}  entries: #{arr[i][2]} exits: #{arr[i][3]}  ms_date: #{arr[i][4]}"  
+	  if set_key == arr[i][1]
+	     entries = arr[i][2] - arr[i-1][2]
+	     exits = arr[i][3] - arr[i-1][3]
+	     grand_central << { :count => entries + exits, :time => arr[i][4] } 
+	  elsif set_key == '' || set_key != arr[i][1]
+	     set_key == arr[i][1]
+	  end
+	     set_key = arr[i][1]
 	end
 	
-	puts processed_ts
+	p grand_central 
 end
 
-make_gc_hash
+def make_ts_hash
+	times_square = []
+	set_key = ''
+	arr = parse_locn_lines(extract_ts_locns)
+	
+	arr.each_index do |i|
+	  
+	  if set_key == arr[i][1]
+	     entries = arr[i][2] - arr[i-1][2]
+	     exits = arr[i][3] - arr[i-1][3]
+	     times_square << { :count => entries + exits, :time => arr[i][4] } 
+	  elsif set_key == '' || set_key != arr[i][1]
+	     set_key == arr[i][1]
+	  end
+	     set_key = arr[i][1]
+	end
+	
+	p times_square 
+end
+make_ts_hash
