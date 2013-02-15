@@ -6,7 +6,7 @@ require 'open-uri'
 require 'json'
 require 'zip/zip'
 require 'Date'
-require 'Time'
+#require 'Time'
 
 def date_to_ms(date, time)
 	split_date = date.split('-')
@@ -104,13 +104,27 @@ end
 
 def make_gc_hash
 	grand_central = {}
+	processed_ts = []
+	set_key = ''
 	arr = parse_locn_lines(extract_gc_locns)
 	
-	arr.each { |x|
-		
-		puts "x[0]:#{x[0]}:;x[1]:#{x[1]}" }
+	arr.each_index do |i|
+	  
+	  #if set_key != '' || set_key == arr[i][1]
+	    entries = arr[i][2] - arr[i-1][2]
+	    exits = arr[i][3] - arr[i-1][3]
+	    
+	    
+	    #processed_ts << [entries + exits, arr[i][4]]
+	   puts "entries: #{entries}  exits: #{exits}" 
+	  #elsif set_key == '' || set_key != arr[i][1]
+	    set_key == arr[i][1]
+	    
+	  #end
+	  #puts "locn: #{arr[i][0]}  key: #{arr[i][1]}  entries: #{arr[i][2]} exits: #{arr[i][3]}  ms_date: #{arr[i][4]}"  
+	end
 	
-	
+	puts processed_ts
 end
 
 make_gc_hash
