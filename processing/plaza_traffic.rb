@@ -54,6 +54,8 @@ def parse_to_ids_avgs
 	  
 end
 
+parse_to_ids_avgs
+
 def make_json
   plz_traffic = []
     

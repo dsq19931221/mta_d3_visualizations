@@ -31,6 +31,13 @@ def write_to_raw_file
 	fh.close
 end
 
+def write_json_to_file
+	Dir.chdir(File.join(File.dirname(__FILE__), '..', 'data'))
+	fh = File.open('turnstile_traffic_test.json', 'w')
+	fh.write(make_json)
+	fh.close
+end
+
 #write_to_raw_file
 
 def parse_raw
@@ -119,7 +126,7 @@ def make_gc_hash
 	     set_key = arr[i][1]
 	end
 	
-	p grand_central 
+	grand_central.sort_by { |count, time| time } 
 end
 
 def make_ts_hash
@@ -132,13 +139,59 @@ def make_ts_hash
 	  if set_key == arr[i][1]
 	     entries = arr[i][2] - arr[i-1][2]
 	     exits = arr[i][3] - arr[i-1][3]
-	     times_square << { :count => entries + exits, :time => arr[i][4] } 
+	     times_square << { :time => arr[i][4], :count => (entries + exits).to_f } 
 	  elsif set_key == '' || set_key != arr[i][1]
 	     set_key == arr[i][1]
 	  end
 	     set_key = arr[i][1]
 	end
 	
-	p times_square 
+	times_square.sort_by { |count, time| time }  
 end
-make_ts_hash
+
+class Array
+  def median_traffic
+   tstiles_grpd = self.group_by { |tstile| tstile[:time] }
+
+    avgs_with_id = tstiles_grpd.map{ |array|  [array[1][0][:time], array[1].inject(0) do |sum, num| (sum + num[:count]) / num.size end] }
+  
+    avgs_with_id
+  end
+end
+
+def gc_time_median_hash
+  grand_central_a = []
+  arr = make_gc_hash.median_traffic
+  arr.each_index do |i|
+    if arr[i][1] < 0 || arr[i][1] == 0
+      next
+    else 
+      grand_central_a << { :time => arr[i][0], :count => arr[i][1] }
+    end
+  end
+  grand_central_a
+end 
+
+def ts_time_median_hash
+  times_square_a = []
+  arr = make_ts_hash.median_traffic
+  arr.each_index do |i|
+    if arr[i][1] < 0 || arr[i][1] == 0
+      next
+    else 
+      times_square_a << { :time => arr[i][0], :count => arr[i][1] }
+    end
+  end
+  times_square_a
+end
+
+def make_json
+  combined = {}
+  combined[:times_square] = ts_time_median_hash
+  combined[:grand_central] =  gc_time_median_hash
+  combined.to_json
+end
+
+write_json_to_file
+
+  
