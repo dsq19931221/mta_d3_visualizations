@@ -25,7 +25,6 @@ end
 
 def write_to_raw_file
 	Dir.chdir(File.join(File.dirname(__FILE__), '..', 'data'))
-	
 	fh = File.open('turnstile_traffic.txt', 'w' )
 	fh.write(fetch_data)
 	fh.close
@@ -119,16 +118,17 @@ def make_gc_hash
 	  if set_key == arr[i][1]
 	     entries = arr[i][2] - arr[i-1][2]
 	     exits = arr[i][3] - arr[i-1][3]
-	     grand_central << { :count => entries + exits, :time => arr[i][4] } 
+	     grand_central << { :time => arr[i][4],:count => (entries + exits).to_f } 
 	  elsif set_key == '' || set_key != arr[i][1]
 	     set_key == arr[i][1]
 	  end
 	     set_key = arr[i][1]
 	end
 	
-	grand_central.sort_by { |count, time| time } 
+	p grand_central
 end
 
+make_gc_hash
 def make_ts_hash
 	times_square = []
 	set_key = ''
@@ -146,8 +146,9 @@ def make_ts_hash
 	     set_key = arr[i][1]
 	end
 	
-	times_square.sort_by { |count, time| time }  
+	times_square 
 end
+
 
 class Array
   def median_traffic
@@ -157,6 +158,11 @@ class Array
   
     avgs_with_id
   end
+  
+  def sort_arr_hash
+    sorted_arr = self.sort_by { |hsh| hsh[:time] }
+  end
+  
 end
 
 def gc_time_median_hash
@@ -171,6 +177,7 @@ def gc_time_median_hash
   end
   grand_central_a
 end 
+
 
 def ts_time_median_hash
   times_square_a = []
@@ -187,11 +194,11 @@ end
 
 def make_json
   combined = {}
-  combined[:times_square] = ts_time_median_hash
-  combined[:grand_central] =  gc_time_median_hash
+  combined[:times_square] = ts_time_median_hash.sort_arr_hash
+  combined[:grand_central] =  gc_time_median_hash.sort_arr_hash
   combined.to_json
 end
 
-write_json_to_file
+#write_json_to_file
 
-  
+
