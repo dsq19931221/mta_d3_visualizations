@@ -8,6 +8,37 @@ require 'zip/zip'
 require 'Date'
 #require 'Time'
 
+
+class Hash
+	
+  def median_traffic
+    avgs_with_time = self.map{ |array|  [array[1][0][:time], array[1].inject(0) do |sum, num| (sum + num[:count]) / num.size end] }
+    avgs_with_time
+  end
+  
+end
+
+
+class Array
+	
+  def sort_arr_hash
+    sorted_arr = self.sort_by { |hsh| hsh[:time] }
+  end
+  
+  def ex_low
+	  hsh = {}
+	  tstiles_grpd = self.group_by { |tstile| tstile[:time] } 
+    
+	  tstiles_grpd.each do |key, value|
+		if value.count > 6		  
+		  hsh["#{key}"] = tstiles_grpd[key]
+                end
+	end
+    hsh
+  end
+  
+end#Class array
+
 def date_to_ms(date, time)
 	split_date = date.split('-')
 	new_date = "20#{split_date[2]}-#{split_date[0]}-#{split_date[1]}"
@@ -18,7 +49,8 @@ end
 
 
 def fetch_data
-	uri = 'http://www.mta.info/developers/data/nyct/turnstile/turnstile_120211.txt'
+	uri = 'http://www.mta.info/developers/data/nyct/turnstile/turnstile_130119.txt'
+	#uri = 'http://www.mta.info/developers/data/nyct/turnstile/turnstile_120211.txt'
 	data = open(uri).read
 	data	
 end
@@ -37,7 +69,7 @@ def write_json_to_file
 	fh.close
 end
 
-#write_to_raw_file
+write_to_raw_file
 
 def parse_raw
 	raw_data = []
@@ -65,7 +97,6 @@ def extract_gc_locns
 	gc
 end
 
-
 def extract_ts_locns
 	lines = parse_raw
 	ts_locns =  ['R145', 'A021','R143','R151','R148','R147']
@@ -85,7 +116,6 @@ def parse_locn_lines(arr)
 	time_counts = []
 	arr.each do |line|
 		arr = line.split(',')
-		#arr.shift(3)
 		
 		arr.each_with_index do |str, idx|
 			
@@ -118,17 +148,18 @@ def make_gc_hash
 	  if set_key == arr[i][1]
 	     entries = arr[i][2] - arr[i-1][2]
 	     exits = arr[i][3] - arr[i-1][3]
-	     grand_central << { :time => arr[i][4],:count => (entries + exits).to_f } 
+	     grand_central << { :time => arr[i][4],:count => (entries).to_f } 
 	  elsif set_key == '' || set_key != arr[i][1]
 	     set_key == arr[i][1]
 	  end
 	     set_key = arr[i][1]
 	end
 	
-	p grand_central
+	grand_central
 end
 
-make_gc_hash
+#make_gc_hash.ex_low.median_traffic
+
 def make_ts_hash
 	times_square = []
 	set_key = ''
@@ -139,7 +170,7 @@ def make_ts_hash
 	  if set_key == arr[i][1]
 	     entries = arr[i][2] - arr[i-1][2]
 	     exits = arr[i][3] - arr[i-1][3]
-	     times_square << { :time => arr[i][4], :count => (entries + exits).to_f } 
+	     times_square << { :time => arr[i][4], :count => (entries).to_f } 
 	  elsif set_key == '' || set_key != arr[i][1]
 	     set_key == arr[i][1]
 	  end
@@ -149,25 +180,9 @@ def make_ts_hash
 	times_square 
 end
 
-
-class Array
-  def median_traffic
-   tstiles_grpd = self.group_by { |tstile| tstile[:time] }
-
-    avgs_with_id = tstiles_grpd.map{ |array|  [array[1][0][:time], array[1].inject(0) do |sum, num| (sum + num[:count]) / num.size end] }
-  
-    avgs_with_id
-  end
-  
-  def sort_arr_hash
-    sorted_arr = self.sort_by { |hsh| hsh[:time] }
-  end
-  
-end
-
 def gc_time_median_hash
   grand_central_a = []
-  arr = make_gc_hash.median_traffic
+  arr = make_gc_hash.ex_low.median_traffic
   arr.each_index do |i|
     if arr[i][1] < 0 || arr[i][1] == 0
       next
@@ -178,10 +193,9 @@ def gc_time_median_hash
   grand_central_a
 end 
 
-
 def ts_time_median_hash
   times_square_a = []
-  arr = make_ts_hash.median_traffic
+  arr = make_ts_hash.ex_low.median_traffic
   arr.each_index do |i|
     if arr[i][1] < 0 || arr[i][1] == 0
       next
@@ -199,6 +213,6 @@ def make_json
   combined.to_json
 end
 
-#write_json_to_file
+write_json_to_file
 
 
