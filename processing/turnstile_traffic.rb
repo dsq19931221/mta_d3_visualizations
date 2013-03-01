@@ -146,7 +146,7 @@ def make_gc_hash
 	  if set_key == arr[i][1]
 	     entries = arr[i][2] - arr[i-1][2]
 	     exits = arr[i][3] - arr[i-1][3]
-	     grand_central << { :time => arr[i][4],:count => (entries).to_f } 
+	     grand_central << { :time => arr[i][4],:count => (entries + exits).to_f } 
 	  elsif set_key == '' || set_key != arr[i][1]
 	     set_key == arr[i][1]
 	  end
@@ -166,7 +166,7 @@ def make_ts_hash
 	  if set_key == arr[i][1]
 	     entries = arr[i][2] - arr[i-1][2]
 	     exits = arr[i][3] - arr[i-1][3]
-	     times_square << { :time => arr[i][4], :count => (entries).to_f } 
+	     times_square << { :time => arr[i][4], :count => (entries + exits).to_f } 
 	  elsif set_key == '' || set_key != arr[i][1]
 	     set_key == arr[i][1]
 	  end
