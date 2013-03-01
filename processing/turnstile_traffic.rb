@@ -12,8 +12,7 @@ require 'Date'
 class Hash
 	
   def median_traffic
-    avgs_with_time = self.map{ |array|  [array[1][0][:time], array[1].inject(0) do |sum, num| (sum + num[:count]) / num.size end] }
-    avgs_with_time
+    avgs_with_time = self.map{ |key,value| [key ,value.inject(0) do |sum,num| (sum + num[:count]) end / value.size] }
   end
   
 end
@@ -30,10 +29,10 @@ class Array
 	  tstiles_grpd = self.group_by { |tstile| tstile[:time] } 
     
 	  tstiles_grpd.each do |key, value|
-		if value.count > 6		  
-		  hsh["#{key}"] = tstiles_grpd[key]
-                end
-	end
+		  if value.count > 6		  
+		    hsh["#{key}"] = tstiles_grpd[key]
+      end
+	  end
     hsh
   end
   
@@ -49,8 +48,7 @@ end
 
 
 def fetch_data
-	uri = 'http://www.mta.info/developers/data/nyct/turnstile/turnstile_130119.txt'
-	#uri = 'http://www.mta.info/developers/data/nyct/turnstile/turnstile_120211.txt'
+	uri = 'http://www.mta.info/developers/data/nyct/turnstile/turnstile_120211.txt'
 	data = open(uri).read
 	data	
 end
@@ -64,7 +62,7 @@ end
 
 def write_json_to_file
 	Dir.chdir(File.join(File.dirname(__FILE__), '..', 'data'))
-	fh = File.open('turnstile_traffic_test.json', 'w')
+	fh = File.open('turnstile_traffic.json', 'w')
 	fh.write(make_json)
 	fh.close
 end
@@ -157,8 +155,6 @@ def make_gc_hash
 	
 	grand_central
 end
-
-#make_gc_hash.ex_low.median_traffic
 
 def make_ts_hash
 	times_square = []

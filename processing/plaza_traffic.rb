@@ -46,15 +46,13 @@ def parse_to_ids_avgs
 		
 	end
 	
-	p grpd_traffic = raw_traffic.group_by {|plaza| plaza[:id]}
+	grpd_traffic = raw_traffic.group_by {|plaza| plaza[:id]}
 	  
-	#avgs_with_id = grpd_traffic.map{ |array|  [array[1][0][:id], array[1].inject(0) do |sum, num| (sum + num[:total_traffic]) / num.size end] }
+	avgs_with_id = grpd_traffic.map{ |array|  [array[1][0][:id], array[1].inject(0) do |sum, num| (sum + num[:total_traffic]) / num.size end] }
 	    
-	#avgs_with_id
+	avgs_with_id
 	  
 end
-
-parse_to_ids_avgs
 
 def make_json
   plz_traffic = []

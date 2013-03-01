@@ -133,7 +133,7 @@
 	    .attr("d", line(data.times_square))
 	    .attr("class", "times_square");
 	    
-        d3.select("svg")
+    d3.select("svg")
 	   .append("path")
 	     .attr("d", line(data.grand_central))
 	     .attr("class", "grand_central");
@@ -153,13 +153,11 @@
     
     }
 	
-	
-		
 	</script>
     </head>
     <body>
 	<script>
-	  d3.json("/data/turnstile_traffic_test.json", draw)
+	  d3.json("/data/turnstile_traffic.json", draw)
 	</script>
 	
     </body>
