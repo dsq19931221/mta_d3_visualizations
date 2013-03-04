@@ -12,7 +12,7 @@ require 'Date'
 class Hash
 	
   def median_traffic
-    avgs_with_time = self.map{ |key,value| [key ,value.inject(0) do |sum,num| (sum + num[:count]) end / value.size] }
+    avgs_with_time = self.map{ |key,value| [key , value.inject(0) do |sum,num| (sum + num[:count]) end / value.size] }
   end
   
 end
