@@ -69,7 +69,7 @@ end
 
 write_to_raw_file
 
-def parse_raw
+def read_raw
 	raw_data = []
 	parse_file = '../data/turnstile_traffic.txt'
 	
@@ -83,7 +83,7 @@ def parse_raw
 end
 
 def extract_gc_locns
-	lines = parse_raw
+	lines = read_raw
 	gc_locns =  ['R236', 'R238','R237','R240','R237B','R241A']
 	gc = []
 	
@@ -96,7 +96,7 @@ def extract_gc_locns
 end
 
 def extract_ts_locns
-	lines = parse_raw
+	lines = read_raw
 	ts_locns =  ['R145', 'A021','R143','R151','R148','R147']
 	ts = []
 	
@@ -210,5 +210,3 @@ def make_json
 end
 
 write_json_to_file
-
-
