@@ -1,9 +1,8 @@
 require "rubygems"
-#require "bundler/setup"
-require 'nokogiri'
-require 'mechanize'
-require 'open-uri'
-require 'json'
+require "bundler/setup"
+require 'openuri'
+require 'DateTime'
+Bundler.require
 
 def fetch_data
 	uri = 'http://www.mta.info/developers/data/bandt/tbta_plaza/PLAZA_DAILY_TRAFFIC_20121126.xml'
@@ -12,28 +11,23 @@ def fetch_data
 end
 
 def write_to_raw_file
-	Dir.chdir(File.join(File.dirname(__FILE__), '..', 'data'))
-	
-	fh = File.open('daily_plaza_traffic.xml', 'w' )
+	fh = File.open('../data/daily_plaza_traffic.xml', 'w' )
 	fh.write(fetch_data)
 	fh.close
 end
 
 def write_json_to_file
-	Dir.chdir(File.join(File.dirname(__FILE__), '..', 'data'))
-	fh = File.open('daily_plaza_traffic_processed.json', 'w')
+	fh = File.open('../data/daily_plaza_traffic_processed.json', 'w')
 	fh.write(make_json)
 	fh.close
 end
 
 def parse_to_ids_avgs
-	Dir.chdir(File.join(File.dirname(__FILE__), '..', 'data'))
-	
 	grpd_traffic = []
 	raw_traffic = []
 	avgs_with_id = []
 
-	data = Nokogiri::XML(open('daily_plaza_traffic.xml'))
+	data = Nokogiri::XML(open('../data/daily_plaza_traffic.xml'))
 	
 	data.css('TransSummary').collect.each do |summary|
 		if summary.css('facility').count == 10
@@ -86,5 +80,5 @@ def make_json
   
 end#make_json
 
-#write_to_raw_file
-#write_json_to_file
+write_to_raw_file
+write_json_to_file

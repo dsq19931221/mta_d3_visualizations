@@ -1,10 +1,8 @@
 require "rubygems"
-#require "bundler/setup"
-require 'nokogiri'
-require 'mechanize'
-require 'open-uri'
-require 'json'
-require 'zip/zip'
+require "bundler/setup"
+require 'openuri'
+require 'DateTime'
+Bundler.require
 
 zip_file = "../data/Performance_XML_Data.zip"
 extract_dest = "../data/performance_xml_data/"
@@ -19,8 +17,7 @@ def fetch_data
 end
 
 def write_json_to_file
-	Dir.chdir(File.join(File.dirname(__FILE__), '..', 'data'))
-	fh = File.open('bus_performance.json', 'w')
+	fh = File.open('../data/bus_performance.json', 'w')
 	fh.write(parse)
 	fh.close
 end
@@ -36,9 +33,6 @@ def unzip_file (file, destination)
    }
   }
 end
-
-#fetch_data
-#unzip_file(zip_file, extract_dest)
 
 def parse
   parse_file = '../data/performance_xml_data/Performance_MTABUS.xml'
@@ -79,10 +73,11 @@ def parse
 end#defparse
 
 def write_json_to_file
-	Dir.chdir(File.join(File.dirname(__FILE__), '..', 'data'))
-	fh = File.open('bus_performance.json', 'w')
+	fh = File.open('../data/bus_performance.json', 'w')
 	fh.write(parse)
 	fh.close
 end
 
+fetch_data
+unzip_file(zip_file, extract_dest)
 write_json_to_file

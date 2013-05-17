@@ -59,7 +59,8 @@
 	<link rel="stylesheet" type="text/css" href="/styles/train_colours.css" />
 	<script>
 	
-    var time_scale;
+	
+	var time_scale;
     var percent_scale;
     
     function get_timeseries_data(d,i){
@@ -93,7 +94,7 @@
             .style('opacity',0)
             .style('fill','white')
             .transition()
-                .style('opacity',1)
+                .style('opacity',1)        
     }
     
     function draw_timeseries(data, id){
@@ -102,6 +103,8 @@
             .x(function(d){return time_scale(d.time)})
             .y(function(d){return percent_scale(d.late_percent)})
             .interpolate("linear")
+			
+		
         
         var g = d3.select('#chart')
             .append('g')

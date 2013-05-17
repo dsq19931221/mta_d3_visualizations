@@ -1,13 +1,13 @@
 require "rubygems"
 #require "bundler/setup"
+require 'open-uri'
+require 'Date'
+require 'Time'
+#Bundler.require
 require 'nokogiri'
 require 'mechanize'
-require 'open-uri'
 require 'json'
-require 'zip/zip'
-require 'Date'
-#require 'Time'
-
+require 'zip'
 
 class Hash
 	
@@ -54,15 +54,13 @@ def fetch_data
 end
 
 def write_to_raw_file
-	Dir.chdir(File.join(File.dirname(__FILE__), '..', 'data'))
-	fh = File.open('turnstile_traffic.txt', 'w' )
+	fh = File.open('../data/turnstile_traffic.txt', 'w' )
 	fh.write(fetch_data)
 	fh.close
 end
 
 def write_json_to_file
-	Dir.chdir(File.join(File.dirname(__FILE__), '..', 'data'))
-	fh = File.open('turnstile_traffic.json', 'w')
+	fh = File.open('../data/turnstile_traffic.json', 'w')
 	fh.write(make_json)
 	fh.close
 end
