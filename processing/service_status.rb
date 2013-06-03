@@ -1,8 +1,6 @@
-require "rubygems"
-require "bundler/setup"
-require 'openuri'
-require 'DateTime'
-Bundler.require
+require 'rubygems'
+require 'bundler/setup'
+Bundler.require(:default)
 
 def fetch_service_status
 	uri = 'http://www.mta.info/status/serviceStatus.txt'

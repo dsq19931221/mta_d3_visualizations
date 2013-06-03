@@ -1,8 +1,7 @@
 require "rubygems"
 require "bundler/setup"
-require 'openuri'
-require 'DateTime'
-Bundler.require
+#require 'open-uri'
+Bundler.require(:default)
 
 def fetch_data
 	uri = 'http://www.mta.info/developers/data/bandt/tbta_plaza/PLAZA_DAILY_TRAFFIC_20121126.xml'

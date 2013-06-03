@@ -1,8 +1,7 @@
-require "rubygems"
-require "bundler/setup"
-require 'openuri'
-require 'DateTime'
-Bundler.require
+require 'rubygems'
+require 'bundler/setup'
+Bundler.require(:default)
+
 
 zip_file = "../data/Performance_XML_Data.zip"
 extract_dest = "../data/performance_xml_data/"

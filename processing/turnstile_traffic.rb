@@ -1,13 +1,6 @@
-require "rubygems"
-#require "bundler/setup"
-require 'open-uri'
-require 'Date'
-require 'Time'
-#Bundler.require
-require 'nokogiri'
-require 'mechanize'
-require 'json'
-require 'zip'
+require 'rubygems'
+require 'bundler/setup'
+Bundler.require(:default)
 
 class Hash
 	

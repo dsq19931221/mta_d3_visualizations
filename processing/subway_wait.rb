@@ -1,15 +1,7 @@
-require "rubygems"
-#require "bundler/setup"
-require 'open-uri'
-require 'Date'
-require 'Time'
-#Bundler.require
-require 'nokogiri'
-require 'mechanize'
-require 'json'
-require 'zip'
+require 'rubygems'
+require 'bundler/setup'
+Bundler.require(:default)
 
-#Bundler.require
 
 =begin
 Necessary files (http://www.mta.info/developers/data/Performance_XML_Data.zip) already downloaded by bus_performance.rb, unless
