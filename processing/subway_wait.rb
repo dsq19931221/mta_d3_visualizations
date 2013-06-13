@@ -8,28 +8,39 @@ Necessary files (http://www.mta.info/developers/data/Performance_XML_Data.zip) a
 this script has not previously been run.
 =end
 
+def write_to_file(path, file)
+	fh = File.open(path, 'w' )
+	fh.write(file)
+	fh.close
+end
 
 def parse
 	arr = []
-	exclude = [ "V", "S 42 St", "Line_W", "S Fkln", "S Rock" ]
+	exclude = ["V Line","S 42 St","W Line","S Fkln","S Rock"]
 	
 	parse_file = "../data/performance_xml_data/Performance_NYCT.xml"
 	indicator_sections = Nokogiri::XML(open(parse_file)).css('INDICATOR').collect
 	
 	indicator_sections.each do |indicator_section|
-		if indicator_section.css('INDICATOR_NAME').text.include?("Subway Wait Assessment - ") && indicator_section.css('INDICATOR_NAME').text.include?("V") == false && indicator_section.css('INDICATOR_NAME').text.include?("S 42 St") == false && indicator_section.css('INDICATOR_NAME').text.include?("W Line") == false && indicator_section.css('INDICATOR_NAME').text.include?("S Fkln") == false && indicator_section.css('INDICATOR_NAME').text.include?("S Rock") == false
+		indicator_name = indicator_section.css('INDICATOR_NAME').text
+
+		if indicator_name.include?("Subway Wait Assessment - ") && exclude.include?(indicator_section.css('INDICATOR_NAME').text.split('-') [1].strip) == false 
+
 			line_name = indicator_section.css('INDICATOR_NAME').text.split('-') [1].strip
 			line_id = line_name.split(' ').reverse.join('_')
 			year = indicator_section.css('PERIOD_YEAR').text
 			month = indicator_section.css('PERIOD_MONTH').text
 			timestamp = Time.parse("#{year}-#{month}-01").to_i * 1000
+
 			if indicator_section.css('MONTHLY_ACTUAL').text == ''|| indicator_section.css('MONTHLY_ACTUAL').text == '.00'
 				next
 			else
 				late_percent = indicator_section.css('MONTHLY_ACTUAL').text
 			end
+
 			arr << { :line_id => line_id, :line_name => line_name, :late_percent=> late_percent, :time => timestamp  }
 		end
+
 	end
 	arr
 end
@@ -41,9 +52,10 @@ def get_mean
 	
 end
 
-File.open("../data/subway_wait.json", 'w') {|f| f.write(parse.to_json) }
+write_to_file("../data/subway_wait.json", parse.to_json)
 
-File.open("../data/subway_wait_mean.json", 'w') {|f| f.write(get_mean.to_json) }
+write_to_file("../data/subway_wait_mean.json", get_mean.to_json)
+
 
 
 
